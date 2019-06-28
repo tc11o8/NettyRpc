@@ -30,7 +30,6 @@ public class JsonTest {
         System.out.println(resp.getRequestId());
     }
 
-
     private static void TestJsonSerialize(){
         RpcRequest request = new RpcRequest();
         request.setClassName(HelloServiceImpl.class.getName());
@@ -48,6 +47,10 @@ public class JsonTest {
 
         RpcRequest req = (RpcRequest)JsonUtil.deserialize(datas,RpcRequest.class);
         System.out.println(req.getRequestId());
+    }
+
+    public static void main(String[] args) {
+
     }
 
 }
